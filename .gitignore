@@ -1,0 +1,20 @@
+# Angular / Node
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+
+# Python
+backend/.venv/
+backend/__pycache__/
+backend/**/*.pyc
+
+# Environment variables
+.env
+backend/.env
+frontend/.env
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/ 
