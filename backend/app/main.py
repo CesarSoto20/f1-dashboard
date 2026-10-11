@@ -1,7 +1,8 @@
 from fastapi import FastAPI
+from app.schemas import DriverResponse
+
 
 app = FastAPI()
-
 
 
 @app.get("/")
@@ -10,8 +11,7 @@ def get_root():
 
 
 
-
-@app.get("/drivers")
+@app.get("/drivers",response_model=list[DriverResponse])
 def get_drivers():
     drivers = [
         {"id": 1, "name": "Max Verstappen", "team": "Red Bull Racing"},
